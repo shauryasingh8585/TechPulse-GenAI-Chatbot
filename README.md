@@ -1,75 +1,55 @@
-# TechPulse AI – GenAI Chatbot
+# 🤖 TechPulse AI – Generative AI Chatbot
 
-A **Generative AI Chatbot** built with **Streamlit + LangChain + Groq**.
+A modern **Generative AI Chatbot** built using **Streamlit + LangChain + Groq**.
 
-Users can ask **any technology-related question** either by typing freely or by clicking **predefined suggested questions**.
-
-The chatbot uses LangChain + Groq. It has a built-in knowledge base for common topics and can also answer general technology, programming, and AI questions.
+Users can ask technology-related questions and also click on predefined suggested questions to get instant answers.
 
 ---
 
-## Features
+## ✨ Features
 
-- Beautiful Streamlit chat interface
-- **Predefined Questions** sidebar (click to ask instantly)
-- Can answer **any technology-related question** (not limited to predefined ones)
-- Powered by **LangChain** + **Groq** (free & very fast)
-- Uses Llama 3.3 70B model
-- Conversation memory (context-aware replies)
-- Clear Chat button
-- Fully educational project for college submission
+- Clean and modern dark-themed chat interface
+- Predefined suggested questions (clickable buttons)
+- Free text input for any technology-related question
+- Powered by **LangChain** + **Groq** (Llama 3.1)
+- Works both locally and on Streamlit Community Cloud
+- Secure API key handling (never exposed in code)
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-| Component       | Technology              |
-|-----------------|-------------------------|
-| Framework       | Streamlit               |
-| Orchestration   | LangChain               |
-| LLM Provider    | Groq (Free tier)        |
-| Model           | Llama 3.3 70B Versatile |
-| Environment     | python-dotenv           |
+| Technology       | Purpose                          |
+|------------------|----------------------------------|
+| Streamlit        | Frontend & Web App Framework     |
+| LangChain        | LLM Orchestration                |
+| Groq             | Fast LLM Inference (Free tier)   |
+| Llama 3.1 8B     | Language Model                   |
+| python-dotenv    | Environment variable management  |
 
 ---
 
-## Project Structure
+## 🚀 How to Run Locally
 
-```
-techpulse-genai-chatbot/
-├── app.py                 # Main Streamlit application
-├── requirements.txt       # Python dependencies
-├── .env.example           # Template for API key
-├── .gitignore
-└── README.md
+### 1. Clone the repository
+```bash
+git clone https://github.com/shauryasingh8585/TechPulse-GenAI-Chatbot.git
+cd TechPulse-GenAI-Chatbot
 ```
 
----
-
-## How to Run
-
-### 1. Clone / Download the project
-
-### 2. Create virtual environment (recommended)
-
+### 2. Create virtual environment
 ```bash
 python -m venv venv
-
-# Windows
-venv\Scripts\activate
-
-# Mac / Linux
-source venv/bin/activate
+venv\Scripts\activate          # Windows
+# source venv/bin/activate     # Mac/Linux
 ```
 
 ### 3. Install dependencies
-
 ```bash
 pip install -r requirements.txt
 ```
 
 ### 4. Add your Groq API Key
-
 Create a file named `.env` in the project root:
 
 ```env
@@ -83,56 +63,60 @@ GROQ_API_KEY=your_actual_groq_api_key_here
 4. Copy and paste it in the `.env` file
 
 ### 5. Run the app
-
 ```bash
 streamlit run app.py
 ```
 
-The app will open at → `http://localhost:8501`
+The app will open at → http://localhost:8501
 
 ---
 
-## Predefined Topics
+## ☁️ Deploy on Streamlit Community Cloud (Free)
 
-The chatbot is designed to answer questions about:
+1. Push your code to GitHub (already done)
+2. Go to [https://share.streamlit.io](https://share.streamlit.io)
+3. Sign in with your GitHub account
+4. Click **New app**
+5. Select the repository: `TechPulse-GenAI-Chatbot`
+6. Main file path: `app.py`
+7. Click **Advanced settings** → **Secrets**
+8. Add this:
+   ```toml
+   GROQ_API_KEY = "your_actual_groq_api_key_here"
+   ```
+9. Click **Deploy**
 
-- Artificial Intelligence (AI)
-- Machine Learning & Deep Learning
-- Generative AI & Large Language Models (LLMs)
-- MERN Stack
-- React.js & Node.js
-- Cloud Computing
-- Cybersecurity
-- Blockchain
-- Prompt Engineering
-
----
-
-## Why Groq?
-
-- Completely **free** tier available
-- Extremely fast inference
-- Excellent support for Llama models
-- Easy integration with LangChain (`langchain-groq`)
+Your public live link will be ready in 1–2 minutes!
 
 ---
 
-## Important Notes
+## 📸 Screenshots
 
-- Never upload your real `.env` file to GitHub
-- Always use `.env.example` as a template
-- This project is for educational / college submission purposes
+(Add screenshots of the chatbot here after running)
 
 ---
 
-## Author
+## 📁 Project Structure
 
-**Your Full Name**  
-College Assignment – Generative AI Project  
-Built with Streamlit + LangChain + Groq
+```
+TechPulse-GenAI-Chatbot/
+├── app.py              # Main Streamlit application
+├── requirements.txt    # Python dependencies
+├── .gitignore
+└── README.md
+```
 
 ---
 
-## License
+## 👨‍💻 Author
 
-Educational use only.
+**Shaurya Singh**  
+College Project – Generative AI Chatbot  
+Built using Streamlit + LangChain + Groq
+
+---
+
+## 📄 License
+
+This project is created for educational purposes.
+```
