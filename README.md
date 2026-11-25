@@ -127,7 +127,7 @@ The chatbot is designed to answer questions about:
 
 ## Author
 
-**Your Full Name**  
+**SHAURYA SINGH**  
 College Assignment – Generative AI Project  
 Built with Streamlit + LangChain + Groq
 
